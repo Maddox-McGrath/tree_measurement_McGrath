@@ -50,12 +50,12 @@
         var featureLayer = L.esri.featureLayer({
             url: 'https://services.arcgis.com/LBbVDC0hKPAnLRpO/arcgis/rest/services/tree_measurement_all/FeatureServer/0',
             style: function () {
-                return { color: "blue", weight: 1, fillOpacity: 0.6 };
+                return { color: "orange", weight: 1, fillOpacity: 0.6 };
             },
             pointToLayer: function (geojson, latlng) {
                 return L.circleMarker(latlng, {
                     radius: 8,  // Adjust size of circles
-                    fillColor: "red",
+                    fillColor: "green",
                     color: "white",
                     weight: 1,
                     opacity: 1,
